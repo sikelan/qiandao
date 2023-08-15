@@ -113,9 +113,9 @@ class SouShuBaClient:
 
 if __name__ == '__main__':
     try:
-        client = SouShuBaClient(os.environ.get('SOUSHUBA_HOSTNAME', 'www.apr.soushu2029.com'),
-                                os.environ.get('SOUSHUBA_USERNAME'),
-                                os.environ.get('SOUSHUBA_PASSWORD'))
+        client = SouShuBaClient(os.environ.get('SOUSHUBA_HOSTNAME', 'https://host123.91downbook.com'),
+                                os.environ.get('SOUSHUBA_USERNAME','sikelan'),
+                                os.environ.get('SOUSHUBA_PASSWORD','zzk42452452'))
         client.login()
         client.space()
         credit = client.credit()
